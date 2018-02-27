@@ -17,3 +17,13 @@ body{
 .right-column p {
   font-size: 15px;
 }
+.caption {
+  font-size: 10px;
+  color: #c4c9d1;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+/* NOTE: Left off on step applying layout step 1 */
