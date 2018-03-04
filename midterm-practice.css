@@ -1,8 +1,29 @@
+/* NOTE: Need to go back and look at centering images */
 body{
-  background-color: #E32144;
+  padding: 60px;
+}
+* {
+  box-sizing: border-box;
 }
 .container{
-  background-color: #DBF0E1;
+  background-color: #d4f7f7;
+  max-width: 900px;
+  padding: 30px;
+  border: 10px ridge #283d70;  /* NOTE: Added a ridged border*/
+  margin: 0 auto;               /* NOTE: centered container */
+  overflow: auto;   /* NOTE: (to self) MUST DO OVERFLOW for container to be filled */
+}
+@media(min-width: 550px) {
+.left-column {
+  float:left;
+  width: 25%;
+  padding-right: 15px;
+}
+.right-column p {
+    float: right;
+    width: 75%;
+    padding-left: 15px;
+}
 }
 .left-column p{
   margin-top: 0;
@@ -11,23 +32,48 @@ body{
 .left-column p a{
     font-weight: bold;
 }
-.staff-writer {
-    font-style: italic;
-}
-.right-column p {
-  font-size: 15px;
-}
-.caption {
+p.caption {
+  font-family: Georgia;     /* NOTE: changed font georgia */
   font-size: 10px;
-  color: #c4c9d1;
+  font-style: italic;       /* NOTE: made font italic */
+  color: 	#2e3546;          /* NOTE: made font dark gray */
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.left-column p:nth-child(2) {
+  font-style: italic;
+}
+.left-column {
+    font-family: helvetica;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 15px;        /* NOTE: changed font size */
+    font-weight: lighter;   /* NOTE: made font lighter */
+    margin-top: 6px;        /* NOTE: Added a spacing between headline border and column */
 }
 img {
+  margin: 0 auto;           /* NOTE: centered images */
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 80%;                /* NOTE: Made images smaller */
+  border: 5px ridge #bb5050;  /* NOTE: Added a border to images */
+  padding: 4px; /* NOTE: Added space between img and border */
 }
 h1 {
   font-size: 35px;
+  font-family: Georgia;     /* NOTE: changed font style */
+  font-weight: lighter;     /* NOTE: made font lighter */
+  color: #283d70;           /* NOTE: changed headline from black to blue */
+  border-bottom: 3px dashed #bb5050;    /* NOTE: Added a border to bottom of headline*/
 }
-/* NOTE: Left off on step applying layout step 1 */
+.right-column {
+  font-family: helvetica;   /* NOTE: changed font helvetica */
+  font-size: 15px;          /* NOTE: changed font size */
+  margin-top: 6px;        /* NOTE: Added a spacing between headline border and column */
+}
+a {
+  color: #283d70;           /* NOTE: changed link from black to blue */
+}
+.right-column p{
+  color: #283d70;           /* NOTE: changed text from black to blue */
+}
